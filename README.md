@@ -1,7 +1,5 @@
 # zernike_transform
 
-### Example:
-
 ## How to start:
 
 - Initialize class
