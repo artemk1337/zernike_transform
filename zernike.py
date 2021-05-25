@@ -177,6 +177,6 @@ if __name__ == "__main__":
     Z = Zernike()
     img = Z.load_img("star.jpg")
     print(img.shape)
-    img = Z.crop_image(img, img.shape[1] // 2, img.shape[0] // 2, R=img.shape[0] // 2, show=True)
+    img = Z.crop_image(img=img, x=img.shape[1] // 2, y=img.shape[0] // 2, R=img.shape[0] // 2, show=True)
     Z.zernike_polynomials(img, max_depth=40)
     Z.zernike_reconstruct_image(Z.coefs, R=100, depth=40, save=True)
