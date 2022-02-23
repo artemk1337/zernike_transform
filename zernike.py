@@ -33,7 +33,11 @@ def show_cercle(arr, x_shift, y_shift, R, cmap='Spectral', fig=None, part=(1, 1)
 
 class Zernike:
     def __init__(self):
-        self.img = self.size = self.R = self.x_shift = self.y_shift = None
+        self.img = None
+        self.size = None
+        self.R = None
+        self.x_shift = None
+        self.y_shift = None
 
     @staticmethod
     def load_img(img):
